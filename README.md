@@ -15,6 +15,6 @@ Now before we begin we need to state some definitions to some of DDD's most famo
       For example, if we were building an online shopping site, then our domain would be "Online Shopping", now all our terminology would be from this domain and our language would be only from this domain context, so instead of "*ListAggregator*" we would use something like "*ShoppingItemsAggregator*" this makes more clear to both developers and domain experts what exactly this part of the app does.
       This domain might be a rather big one that contains various small subdomains by itself, so we divide it into smaller domains, like the *Shopping Cart* Domain, the *Payment* Domain, the *Inventory* Domain ...etc. each one of those could be divided into smaller domains, until we reach a **Bounded Context**
 
-2. **Bounded Context** A bounded context is a self contained part of the domain, it needs no direct depencies on other parts and provide a single set of functionality
+2. **Bounded Context** A bounded context is a self contained part of the domain, it needs no direct dependencies on other parts and provide a single set of functionality
 
 3. **Ubiquitous Language** We use a common language and terminology in communication and naming our classes and other parts of our system, now it's a "language" on its own, it's more of a predefined and agreed upon terminology that we will use in our system, that is both understadable by the developers and the domain experts
