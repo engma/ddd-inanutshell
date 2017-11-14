@@ -1,11 +1,13 @@
 # Domain Driven Design in a Nutshell
-In this very simple introduction I try to distell and give you a very quick overview of what Domain Driven Design is, if you would like to check more informative and detailed resources please check:
+In this very simple introduction I try to distell and give you a very quick overview of what Domain Driven Design is, for more detailed information:
 * [Domain Driven Design Distelled by Vaughn Vernon](https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420/ref=sr_1_sc_1?ie=UTF8&qid=1499649365&sr=8-1-spell&keywords=domain+driven+design+distelled)
 * [Domain Driven Design by Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&qid=1499649453&sr=8-1&keywords=domain+driven+design)
 
 ______
 ## Domain Experts
-Those are the individuals who have a great deal of familiarity with the domain which the software is trying to solve a problem for. For example, if we were making a software for medical information, then doctors would be our domain experts, if we were making a software for hotel booking, the hotel managers would be the experts of this domain.
+Those are the individuals who have a great deal of familiarity with the domain which the software is trying to solve a problem for. For example, if we were making a software for medical information, then the doctors would be our domain experts, if we were making a software for hotel reservations, the hotel managers would be the experts of this domain.
+
+**They are the ones who posses the knowledge which defines the problem and what the output of the software should be in order to be considered a complete solution, and they can define acceptance tests for this software**
 
 ## Ubiquitous Language
 
