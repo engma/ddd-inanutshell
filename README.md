@@ -17,6 +17,6 @@ The Ubiquitous language **MUST be used as it is in our code**. Developers are no
 
 The Ubiquitous Langauge guarantees that our code is a complete reflection of what our experts have in mind, it also ensures that the developers know exactly how the system components interact with each other in regards to the real world problem. This will make it easier to spot the gaps or the differences between what we have and the real world, as well as being able to continously refine our code to get a more concrete representation of the problem domain.
 
-This language will be under constant refining and enhancement. It will start as a very understandable or clear language to both parties. But with constant knowledge crunching and information gathering, it will become much more robust and standard, and it will make future upgrades easier and quicker to understand.
+This language will be under constant refining and enhancement. It won't be a very understandable or clear language to both parties at the beginning. But with constant knowledge crunching and information gathering, it will become much more robust and standard, and it will make future upgrades easier and quicker to understand.
 
 **The language used to communicate with the domain experts to gather requirements and information, and the terms during our discussions must be reflected as they are in our code**
