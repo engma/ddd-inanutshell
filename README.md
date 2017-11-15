@@ -11,14 +11,17 @@ Those are the individuals who have a great deal of familiarity with the domain w
 
 ## Ubiquitous Language
 
-The **Language**: Languages are some set of characters/phrases arranged together to define a meaning that is understandable by someone or something that can parse those phrases. When developing software it is important that the *domain experts* and the *developers* would create a language of expressions and common phrases that define the system's model and interactions.
+**The Language**: Languages are some set of characters/phrases arranged together to define a meaning that is understandable by someone or something that can parse those phrases. When developing software it is important that the *domain experts* and the *developers* would create a language of expressions and common phrases that define the system's model and interactions.
 
 For example, in a hotel booking app, the term *a Booking* would be an agreed upon term that is both understandable for both the experts and the devs, whenever any of them needs to exchange a piece of information about booking manipulation, they would use the term *a booking*, also when a user *books* a *booking* we use the term *books* to refer to this activity.
 
-The Ubiquitous language **MUST be used as it is in our code**. Developers are not allowed to change the terms to more technical one, like using BookingTable or BookingEntity. It must be the same language used by the experts. The same goes for the activities or the interactions which our objects do. So for example, in our code, the user would *book* a booking using the *BookingService*. We could have called it *create* a booking in the code to be a more technical term, but in that case, we lost our domain based language.
+The Ubiquitous language **MUST be used as it is in our code**. Developers are not allowed to change the terms to more technical one, like using `BookingTable` or `BookingEntity`. It must be the same language used when communicating with the experts and the language that the experts would understand. The same goes for the activities or the interactions which our objects do, those interactions need to be labeled with the same terms that we use during our communications. So for example, in our code, the user would `book` a booking using the `BookingService`. We could have called it `create` a booking using the `BookingDB` class in the code to be more technical, but in that case, we lost our domain based language. And the information that we acquired from the experts are no longer visible in our code.
 
-The Ubiquitous Langauge guarantees that our code is a complete reflection of what our experts have in mind, it also ensures that the developers know exactly how the system components interact with each other in regards to the real world problem. This will make it easier to spot the gaps or the differences between what we have and the real world, as well as being able to continuously refine our code to get a more concrete representation of the problem domain.
+The Ubiquitous Langauge guarantees that our code is a complete reflection of what our experts have in mind, it also ensures that the developers know exactly how the system components interact with each other in regards to the real world problem. This will make it easier to spot the gaps or the differences between what we have implemented and the real world representation of the model, as well as being able to continuously refine our code to get a more concrete representation of the problem domain.
 
 This language will be under constant refining and improvement. It won't be a very understandable or clear language to both parties at the beginning. But with constant knowledge crunching and information gathering, it will become much more robust and standard, and it will make future upgrades easier and quicker to understand.
 
 **The language used to communicate with the domain experts to gather requirements and information, and the terms during our discussions must be reflected as they are in our code**
+
+
+
