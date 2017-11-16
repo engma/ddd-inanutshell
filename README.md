@@ -34,3 +34,6 @@ Although they may share some concepts, they will have a different representation
 
 These subtle distinctions between what a room is in different contexts are really important in defining the context's boundaries and the relations between different contexts.
 Those two contexts will need to share some data between each other in order to complete the overall system functionality which is booking a hotel room. This will call for some translations between the two contexts, which we will discuss in the next section.
+
+## Context Maps
+Each s
