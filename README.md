@@ -1,7 +1,7 @@
 # Domain Driven Design in a Nutshell
 This is a brief summary of what domain-driven design is and what are it's building blocks, it is meant to serve as a quick reference for DDD, for more detailed information:
 * [Domain Driven Design by Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&qid=1499649453&sr=8-1&keywords=domain+driven+design)
-* [Domain Driven Design Distelled by Vaughn Vernon](https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420/ref=sr_1_sc_1?ie=UTF8&qid=1499649365&sr=8-1-spell&keywords=domain+driven+design+distelled)
+* [Domain Driven Design Distilled by Vaughn Vernon](https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420/ref=sr_1_sc_1?ie=UTF8&qid=1499649365&sr=8-1-spell&keywords=domain+driven+design+distelled)
 
 ______
 ## Domain Experts
@@ -51,7 +51,7 @@ Bounded context will always need to communicate and/or exchange information, to 
 ### 2. Customer/Supplier 
 
 * One app context will be the provider of the data and the other will be the customer of this data. The upstream will treat the downstream team as a customer which has specific needs to be provided
-* The downstream team will always be treated as a customer and it's requirements will be considered as custmer requirements
-* The upstream team will use some automated tests to insure that each changes doesn't break the downstream apps
+* The downstream team will always be treated as a customer and its requirements will be considered as customer requirements
+* The upstream team will use some automated tests to ensure that each change doesn't break the downstream apps
 * Discussion involving changes in functionality will likely include a representative of the downstream teams as the customers of the app
-* Different demands of different customers has to be balanced and standarised during the discussions
+* Different demands of different customers to the supplier app have to be balanced and standardized during the discussions
