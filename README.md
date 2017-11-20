@@ -55,3 +55,12 @@ Bounded context will always need to communicate and/or exchange information, to 
 * The upstream team will use some automated tests to ensure that each change doesn't break the downstream apps
 * Discussion involving changes in functionality will likely include a representative of the downstream teams as the customers of the app
 * Different demands of different customers to the supplier app have to be balanced and standardized during the discussions
+
+### 3. Conformist
+* The upstream app cannot be modified to the needs of the downstream
+* The upstream app is vital for the downstream
+* The downstream app has a shared model with the upstream
+* The downstream app will conform to the model of the upstream in how it is represented
+* This could lead to better design for the downstream app that matches the domain model in a more coherent way
+
+### 4. Anticorruption Layer
