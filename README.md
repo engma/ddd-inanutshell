@@ -36,4 +36,22 @@ These subtle distinctions between what a room is in different contexts are reall
 Those two contexts will need to share some data between each other in order to complete the overall system functionality which is booking a hotel room. This will call for some translations between the two contexts, which we will discuss in the next section.
 
 ## Context Maps
-Each s
+
+Bounded context will always need to communicate and/or exchange information, to achieve this we have several patterns which can apply, not all the patterns will be applicable to your situation, so it needs a lot of work and design analysis to choose a pattern.
+
+### 1. Shared Kernel
+
+* Involves sharing a piece of functionality between two contexts, this can be a library or a shared piece of code
+* The two contexts will share a subset of the domain, as well as Database design and all the related shared functionality
+* Changes to this shared kernel is not easy because it involves discussions and communications between the teams involved
+* All the teams should be in a homogeneous relation and their work should be easily coordinated, ideally they should be close in range to each other and part of the same department/group
+* The **Shared** part should be as limited as possible, so that it's impact would be small to the changes and needs of both apps
+* Continous integration must be done regularly with all apps involved with every change made to the shared kernel
+
+### 2. Customer/Supplier 
+
+* One app context will be the provider of the data and the other will be the customer of this data. The upstream will treat the downstream team as a customer which has specific needs to be provided
+* The downstream team will always be treated as a customer and it's requirements will be considered as custmer requirements
+* The upstream team will use some automated tests to insure that each changes doesn't break the downstream apps
+* Discussion involving changes in functionality will likely include a representative of the downstream teams as the customers of the app
+* Different demands of different customers has to be balanced and standarised during the discussions
