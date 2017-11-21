@@ -96,3 +96,6 @@ Bounded context will always need to communicate and/or exchange information, to 
 * The published language would help the clients of the service reach a common understanding of the domain and use a single representation
 * Creating this language is not an easy task, it takes a lot of takes and refinements with the consumers of the service
 * In some cases a common language might already exist which we can just use with our clients, like a well known domain language which is already used between the services clients
+
+## Choosing Context Design Strategy
+* 
