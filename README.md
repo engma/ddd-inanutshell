@@ -84,3 +84,9 @@ Bounded context will always need to communicate and/or exchange information, to 
 * Used when integration does not provide many benefits to the system and could make the models complex or add a useless translation layer overhead
 
 ### 6. Open Host Service
+* Provide your app's functionality as a public interface for all the required integration apps
+* This interface should be updated and modified reguralry to accomodate to new integration needs
+* For specific integration requests you can create a separate translation layer for that case only, but the public protocol should stay the same
+* Ideal for cases when you have a core service that needs to be accessed by many other services
+
+### 7. Published Language
