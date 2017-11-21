@@ -85,8 +85,14 @@ Bounded context will always need to communicate and/or exchange information, to 
 
 ### 6. Open Host Service
 * Provide your app's functionality as a public interface for all the required integration apps
-* This interface should be updated and modified reguralry to accomodate to new integration needs
+* This interface should be updated and modified regularly to accommodate to new integration needs
 * For specific integration requests you can create a separate translation layer for that case only, but the public protocol should stay the same
 * Ideal for cases when you have a core service that needs to be accessed by many other services
 
 ### 7. Published Language
+* When a shared service is accessed by many services, it may need to publish a common language/contract for all of them to understand
+* That language would the actual representation of the domain model which satisfies all the services
+* Each consuming service would probably have its own idea of what the service's model is, but this understanding could be wrong
+* The published language would help the clients of the service reach a common understanding of the domain and use a single representation
+* Creating this language is not an easy task, it takes a lot of takes and refinements with the consumers of the service
+* In some cases a common language might already exist which we can just use with our clients, like a well known domain language which is already used between the services clients
