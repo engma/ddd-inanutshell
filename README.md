@@ -77,3 +77,10 @@ Bounded context will always need to communicate and/or exchange information, to 
 1. If the other system has a clean interface, you may not need the Facades
 2. You may need to change your model a little bit to minimize the translations if the two systems are very different, but do it with care and make sure you don't compromise the integrity of your model
 3. In case you have access to the other system, doing some refactoring might be useful to support the translations
+
+### 5. Separate Ways
+* The apps will not share anything and will have very little to no data exchange, each one of them will function independently from the other apps
+* They could share the same access layer or middleware layer, but each of them will execute within its own bounded context
+* Used when integration does not provide many benefits to the system and could make the models complex or add a useless translation layer overhead
+
+### 6. Open Host Service
