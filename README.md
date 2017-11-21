@@ -64,3 +64,16 @@ Bounded context will always need to communicate and/or exchange information, to 
 * This could lead to better design for the downstream app that matches the domain model in a more coherent way
 
 ### 4. Anticorruption Layer
+* Used when dealing with legacy subsystems that provide a very messy and fuzzy interface that we have to cope with
+* Consists of Facades, Adapters, and translators
+* *The Facades* will provide a better interface to the legacy app/system, they will use its model (the model of the legacy app). They will provide the needed functionality and will hide the rest, they will also hide the complicated interface of the other system.
+* Facades **must** comply with the other systems model, they are not another layer of modeling, they are merely a friendlier interface
+* *The Adapters* will convert requests from our app to the legacy apps interface and then pass them to the *facades*, they will then convert the response to something that our app can understand
+* There will one adapter per each service which communicates with the other system
+* Adapters only know how to convert requests and responses
+* The task of converting between data models is complicated and could be common across our adapters, adapters will typically use one or more data models of the two systems to achieve their job, therefore they use *Translators*
+* *Translators* handle conversions between data models of the two systems
+#### Notes on Anticorruption Layer
+1. If the other system has a clean interface, you may not need the Facades
+2. You may need to change your model a little bit to minimize the translations if the two systems are very different, but do it with care and make sure you don't compromise the integrity of your model
+3. In case you have access to the other system, doing some refactoring might be useful to support the translations
